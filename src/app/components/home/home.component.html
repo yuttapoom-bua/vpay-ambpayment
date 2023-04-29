@@ -98,6 +98,9 @@
                                 <th>Amount</th>
                                 <th>Fee</th>
                                 <th>Total</th>
+                                <th>acc no</th>
+                                <th>acc name</th>
+                                <th>paid acc_name</th>
                                 <th>Payment</th>
                                 <th>Type</th>
                                 <th>Status
@@ -121,9 +124,12 @@
                                         <td>{{item.amount}}</td>
                                         <td>{{item.merchant_fee}}</td>
                                         <td>{{item.actual_amount}}</td>
+                                        <td>{{item.payer_account_no}}</td>
+                                        <td>{{item.payer_account_name}}</td>
+                                        <td>{{item.payer_account_name_dest}}</td>
                                         <td>{{item.detail}}</td>
                                         <td>{{item.payment_type}}</td>
-                                        <td>{{fullData? item.mergeStatus : item.status}}</td>
+                                        <td>{{item.status}}</td>
                                         <td *ngIf="haveVpay" [class.postmanBad]="item.vpay_postman_status==0"
                                             style="text-align: center;">
                                             {{item.vpay_postman_status}}</td>

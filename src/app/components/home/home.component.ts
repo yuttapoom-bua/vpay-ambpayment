@@ -35,7 +35,7 @@ export class HomeComponent implements OnInit {
     public router: Router,
     public rest: RestServiceApi,
     private modalService: BsModalService
-  ) {}
+  ) { }
 
   async ngOnInit() {
     this.authen = true;
